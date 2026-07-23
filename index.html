@@ -321,6 +321,18 @@
   .contact-meta .lbl{color:#5A6472;display:block;font-size:10px;letter-spacing:0.15em;margin-bottom:6px;text-transform:uppercase}
 
   footer{background:var(--navy-deep);color:#4A5462;text-align:center;padding:30px;font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.05em;border-top:1px solid rgba(198,161,91,0.12)}
+  .to-top{
+    display:inline-flex;align-items:center;gap:8px;
+    margin-bottom:22px;
+    font-family:'IBM Plex Mono',monospace;
+    font-size:11px;letter-spacing:0.12em;text-transform:uppercase;
+    color:var(--gold);background:none;
+    border:1px solid var(--line-dark);border-radius:2px;
+    padding:9px 16px;cursor:pointer;
+    transition:all .2s;
+  }
+  .to-top:hover{background:var(--gold);color:var(--navy-deep);border-color:var(--gold)}
+  .to-top svg{width:11px;height:11px}
 
   /* reveal */
   .reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease}
@@ -582,6 +594,12 @@
 </section>
 
 <footer>
+  <div>
+    <button class="to-top" onclick="scrollToTop()" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+      <span data-lang="en">Back to top</span><span data-lang="de">Nach oben</span>
+    </button>
+  </div>
   © 2026 Torsten Mayer · mayer-executive.de
 </footer>
 
@@ -598,6 +616,10 @@
     try{saved=localStorage.getItem('tm-lang')||'en'}catch(e){}
     setLang(saved);
   })();
+
+  function scrollToTop(){
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
 
   const io=new IntersectionObserver((entries)=>{
     entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}});
