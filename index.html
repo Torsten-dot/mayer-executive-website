@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Torsten Mayer — Executive for German Operations of International Companies</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts.css">
 <style>
   :root{
     --navy:#0B1B2E;
@@ -333,6 +331,10 @@
   }
   .to-top:hover{background:var(--gold);color:var(--navy-deep);border-color:var(--gold)}
   .to-top svg{width:11px;height:11px}
+  .footer-legal{margin-top:14px;font-size:11px;letter-spacing:0.05em}
+  .footer-legal a{color:#5A6474;text-decoration:none;transition:color .2s}
+  .footer-legal a:hover{color:var(--gold)}
+  .footer-legal .sep{color:#333B47;margin:0 10px}
 
   /* ---------- pillars ---------- */
   .pillars{background:var(--paper)}
@@ -668,6 +670,9 @@
     </button>
   </div>
   © 2026 Torsten Mayer · mayer-executive.de
+  <div class="footer-legal">
+    <a href="impressum.html">Impressum</a><span class="sep">·</span><a href="datenschutz.html">Datenschutz</a>
+  </div>
 </footer>
 
 <script>
