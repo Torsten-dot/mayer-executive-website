@@ -226,6 +226,22 @@
     font-size:0.9rem;color:#93A0AF;line-height:1.5;
   }
 
+  /* ---------- method / system (reuses .scard) ---------- */
+  .method{background:var(--navy);color:var(--paper)}
+  .method .sec-eyebrow{color:var(--gold)}
+  .method .sec-title{color:var(--paper)}
+  .method-lead{font-size:1.14rem;color:#B9C1CC;max-width:60ch;line-height:1.68;margin-top:10px}
+  .phase-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+  .principles{margin-top:54px;border-top:1px solid var(--line-dark);padding-top:32px}
+  .principles-label{font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.18em;text-transform:uppercase;color:var(--gold);margin-bottom:20px}
+  .principles-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+  .principle{display:flex;gap:12px;align-items:baseline}
+  .principle .pn{font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:var(--gold);flex-shrink:0}
+  .principle .pt{font-family:'Archivo',sans-serif;font-weight:600;font-size:0.98rem;color:var(--paper);line-height:1.35}
+  .method-close{margin-top:38px;font-size:0.86rem;color:#8A93A0;font-style:italic}
+  @media(max-width:860px){.phase-grid{grid-template-columns:repeat(2,1fr)}.principles-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(max-width:520px){.phase-grid{grid-template-columns:1fr}.principles-grid{grid-template-columns:1fr}}
+
   /* ---------- section base (light) ---------- */
   .sec{padding:100px 7vw}
   .sec-inner{max-width:1160px;margin:0 auto}
@@ -434,12 +450,12 @@
         <span data-lang="de">Torsten Mayer · CEO / Geschäftsführer</span>
       </div>
       <h1>
-        <span data-lang="en">I make German industrial operations <span class="hl">actually profitable.</span></span>
-        <span data-lang="de">Ich mache deutsche Industrie-Standorte <span class="hl">wirklich profitabel.</span></span>
+        <span data-lang="en">I make industrial companies profitable and <span class="hl">increase their value.</span></span>
+        <span data-lang="de">Ich mache Industrieunternehmen profitabel und <span class="hl">steigere ihren Wert.</span></span>
       </h1>
       <p class="hero-sub">
-        <span data-lang="en">Betriebsrat. Labour law. Bürokratie. The exact terrain where transformations fail, and where I deliver EBIT.</span>
-        <span data-lang="de">Betriebsrat. Arbeitsrecht. Bürokratie. Genau das Terrain, auf dem Transformationen scheitern, und auf dem ich EBIT liefere.</span>
+        <span data-lang="en">Restructuring, turnaround, value creation. With a system, not a deck, and with the operational grip that transformations really need. Including the German terrain, works council, labour law, bureaucracy, where many fail.</span>
+        <span data-lang="de">Restrukturierung, Turnaround, Wertsteigerung. Mit einem System, nicht mit Präsentationen, und mit dem operativen Zugriff, den Transformationen wirklich brauchen. Auch auf dem deutschen Terrain, Betriebsrat, Arbeitsrecht, Bürokratie, auf dem viele scheitern.</span>
       </p>
       <p class="hero-tag">
         <span data-lang="en">Built in industry. Tested in crisis. <span class="proven">Proven under pressure.</span></span>
@@ -474,7 +490,7 @@
 <section class="strip" id="terrain">
   <div class="strip-inner">
     <p class="strip-lead reveal">
-      <span data-lang="en">Foreign parent company, private equity or owner-led Mittelstand: when a site needs restructuring, turnaround or real operational leadership, I don't stand beside it with presentations. I<span class="em">take the wheel</span> as CEO/COO.</span>
+      <span data-lang="en">Foreign parent company, private equity or owner-led Mittelstand: when a site needs restructuring, turnaround or real operational leadership, I don't stand beside it with presentations. I <span class="em">take the wheel</span> as CEO/COO.</span>
       <span data-lang="de">Ob ausländische Konzernmutter, Private Equity oder inhabergeführter Mittelstand: Wenn ein Standort Restrukturierung, Turnaround oder echte operative Führung braucht, stehe ich nicht mit Präsentationen an der Seite, sondern als CEO/COO <span class="em">am Steuer</span>.</span>
     </p>
     <div class="strip-cards reveal">
@@ -505,7 +521,7 @@
 <!-- ===================== NICHE / POSITIONING ===================== -->
 <section class="sec niche" id="niche">
   <div class="sec-inner">
-    <div class="niche-grid">
+    <div class="niche-text">
       <div>
         <div class="sec-eyebrow reveal"><span data-lang="en">The difference</span><span data-lang="de">Der Unterschied</span></div>
         <h2 class="sec-title reveal">
@@ -521,37 +537,67 @@
           <p data-lang="de"><span class="strong">CFO-Denken, COO-Umsetzung:</span> MBA in Finance, IDW-S6-Restrukturierungsexpertise und belastbares Stakeholder-Management, verbunden mit der Hands-on-Erfahrung des Operators, fundiert durch Lean Management, Six Sigma und Prozessexzellenz bis auf den Shopfloor.</p>
         </div>
       </div>
-      <div class="niche-points reveal">
-        <div class="npoint">
-          <div class="ic">1</div>
-          <div>
-            <h4><span data-lang="en">Stabilise & take control</span><span data-lang="de">Stabilisieren & Kontrolle gewinnen</span></h4>
-            <p><span data-lang="en">Cash, transparency and decision rights first, before the daily business swallows the transformation.</span><span data-lang="de">Cash, Transparenz und Entscheidungswege zuerst, bevor das Tagesgeschäft die Transformation frisst.</span></p>
-          </div>
-        </div>
-        <div class="npoint">
-          <div class="ic">2</div>
-          <div>
-            <h4><span data-lang="en">Lift EBIT/EBITDA & working capital</span><span data-lang="de">EBIT/EBITDA & Working Capital heben</span></h4>
-            <p><span data-lang="en">Concrete levers from the value creation plan, not concepts: cost structure, procurement, WIP, project financing.</span><span data-lang="de">Konkrete Hebel aus dem Value-Creation-Plan statt Konzepte: Kostenstruktur, Einkauf, WIP, Projektfinanzierung.</span></p>
-          </div>
-        </div>
-        <div class="npoint">
-          <div class="ic">3</div>
-          <div>
-            <h4><span data-lang="en">Navigate the German system</span><span data-lang="de">Das deutsche System navigieren</span></h4>
-            <p><span data-lang="en">Works council, labour law and bureaucracy handled as a lever, not an obstacle.</span><span data-lang="de">Betriebsrat, Arbeitsrecht und Bürokratie als Hebel, nicht als Hindernis.</span></p>
-          </div>
-        </div>
-        <div class="npoint">
-          <div class="ic">4</div>
-          <div>
-            <h4><span data-lang="en">Report the parent trusts</span><span data-lang="de">Reporting, dem die Mutter vertraut</span></h4>
-            <p><span data-lang="en">Clear status, early warnings, no surprises: the basis for real room to act.</span><span data-lang="de">Klarer Status, frühe Warnung, keine Überraschungen: die Basis für echten Handlungsspielraum.</span></p>
-          </div>
-        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== METHOD / SYSTEM ===================== -->
+<section class="sec method" id="method">
+  <div class="sec-inner">
+    <div class="sec-eyebrow reveal"><span data-lang="en">My method</span><span data-lang="de">Meine Methodik</span></div>
+    <h2 class="sec-title reveal">
+      <span data-lang="en">A named system. Not improvisation.</span>
+      <span data-lang="de">Ein benanntes System. Keine Improvisation.</span>
+    </h2>
+    <p class="method-lead reveal">
+      <span data-lang="en">Six phases from first control to an organisation that steers its own performance. Behind it stands a detailed playbook I share in person.</span>
+      <span data-lang="de">Sechs Phasen von der ersten Kontrolle bis zu einer Organisation, die ihre Leistung selbst steuert. Dahinter steht ein ausführliches Playbook, das ich im persönlichen Gespräch teile.</span>
+    </p>
+    <div class="phase-grid">
+      <div class="scard reveal">
+        <div class="ghost">01</div>
+        <div class="t"><span data-lang="en">Gain control</span><span data-lang="de">Kontrolle gewinnen</span></div>
+        <div class="d"><span data-lang="en">Understand the real situation, secure liquidity, establish access.</span><span data-lang="de">Lage klären, Liquidität sichern, Zugriff herstellen.</span></div>
+      </div>
+      <div class="scard reveal">
+        <div class="ghost">02</div>
+        <div class="t"><span data-lang="en">Quick wins</span><span data-lang="de">Quick Wins</span></div>
+        <div class="d"><span data-lang="en">Fast, low-risk measures with immediate effect.</span><span data-lang="de">Schnelle, risikoarme Maßnahmen mit sofortiger Wirkung.</span></div>
+      </div>
+      <div class="scard reveal">
+        <div class="ghost">03</div>
+        <div class="t"><span data-lang="en">Value levers</span><span data-lang="de">Werthebel</span></div>
+        <div class="d"><span data-lang="en">The big EBIT and cash levers, prioritised and implemented.</span><span data-lang="de">Die großen EBIT- und Cash-Hebel, priorisiert und umgesetzt.</span></div>
+      </div>
+      <div class="scard reveal">
+        <div class="ghost">04</div>
+        <div class="t"><span data-lang="en">Build the future</span><span data-lang="de">Zukunft bauen</span></div>
+        <div class="d"><span data-lang="en">Align business and organisation against the future, not around people.</span><span data-lang="de">Geschäft und Organisation gegen die Zukunft ausrichten, nicht um Personen herum.</span></div>
+      </div>
+      <div class="scard reveal">
+        <div class="ghost">05</div>
+        <div class="t"><span data-lang="en">Execute & scale</span><span data-lang="de">Umsetzen & skalieren</span></div>
+        <div class="d"><span data-lang="en">Push it through, learn in the doing, transfer the effect.</span><span data-lang="de">Durchziehen, im Tun lernen, Wirkung übertragen.</span></div>
+      </div>
+      <div class="scard reveal">
+        <div class="ghost">06</div>
+        <div class="t"><span data-lang="en">Anchor performance</span><span data-lang="de">Leistung verankern</span></div>
+        <div class="d"><span data-lang="en">An organisation that steers itself, without permanent special intervention.</span><span data-lang="de">Eine Organisation, die sich selbst steuert, ohne dauernde Sondereingriffe.</span></div>
       </div>
     </div>
+    <div class="principles reveal">
+      <div class="principles-label"><span data-lang="en">The four principles</span><span data-lang="de">Die vier Prinzipien</span></div>
+      <div class="principles-grid">
+        <div class="principle"><span class="pn">01</span><span class="pt"><span data-lang="en">No cash, no future.</span><span data-lang="de">Ohne Cash keine Zukunft.</span></span></div>
+        <div class="principle"><span class="pn">02</span><span class="pt"><span data-lang="en">Result before concept.</span><span data-lang="de">Ergebnis vor Konzept.</span></span></div>
+        <div class="principle"><span class="pn">03</span><span class="pt"><span data-lang="en">Execution creates insight.</span><span data-lang="de">Umsetzung schafft Erkenntnis.</span></span></div>
+        <div class="principle"><span class="pn">04</span><span class="pt"><span data-lang="en">Only realised value counts.</span><span data-lang="de">Nur umgesetzter Wert zählt.</span></span></div>
+      </div>
+    </div>
+    <p class="method-close reveal">
+      <span data-lang="en">Leadership shown under real pressure, not in interviews.</span>
+      <span data-lang="de">Führung zeigt sich unter echter Last, nicht im Interview.</span>
+    </p>
   </div>
 </section>
 
